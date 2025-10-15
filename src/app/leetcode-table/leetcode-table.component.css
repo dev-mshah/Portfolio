@@ -1,0 +1,114 @@
+/* Main card */
+.leetcode-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
+    max-width: 1000px;
+    overflow: hidden;
+}
+
+/* Table title */
+.table-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Scrollable wrapper for mobile */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.5rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+/* Header cells */
+th.mat-header-cell {
+    background-color: #f0f0f0;
+    font-weight: 600;
+    text-align: left;
+    padding: 0.8rem 0.5rem;
+}
+
+/* Data cells */
+td.mat-cell {
+    background-color: #fafafa;
+    padding: 0.6rem 0.5rem;
+    border-radius: 10px;
+    transition: background 0.2s;
+}
+
+/* Hover effect */
+tr.mat-row:hover td.mat-cell {
+    background-color: #e8f0fe;
+}
+
+/* Title + icon */
+.title-cell {
+    align-items: center;
+}
+
+.leetcode-icon {
+    width: 22px;
+    height: 26px;
+    margin-right: 10px;
+}
+
+/* Difficulty colors */
+.easy {
+    color: #43a047;
+    font-weight: 500;
+}
+
+.medium {
+    color: #fb8c00;
+    font-weight: 500;
+}
+
+.hard {
+    color: #e53935;
+    font-weight: 500;
+}
+
+/* Status colors */
+.solved {
+    color: #43a047;
+    font-weight: 500;
+}
+
+.unsolved {
+    color: #e53935;
+    font-weight: 500;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    table {
+        min-width: 100%;
+    }
+
+    /* Optional: hide less important columns on mobile */
+    th.mat-header-cell:nth-child(n+5),
+    td.mat-cell:nth-child(n+5) {
+        display: none;
+    }
+
+    .leetcode-card {
+        padding: 0.5rem;
+    }
+
+    .table-title {
+        font-size: 1.4rem;
+    }
+}
