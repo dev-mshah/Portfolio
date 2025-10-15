@@ -18,21 +18,25 @@
 /* 🌐 Responsive grid for logos */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, 180px);
+    /* fixed width */
+    justify-content: center;
+    /* center the grid */
     gap: 1.5rem;
-    justify-items: center;
-    align-items: center;
     margin-bottom: 2rem;
-    ;
 }
 
 .logo-container {
+    width: 180px;
+    /* match grid column */
+    height: 130px;
+    /* optional fixed height for consistency */
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #fafafa;
     border-radius: 12px;
-    padding: 0.2rem;
+    padding: 0.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -43,6 +47,7 @@
 
 .logo-img {
     width: 100px;
+    /* fixed logo size */
     height: 100px;
     object-fit: contain;
     margin-bottom: 0.75rem;
@@ -62,7 +67,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
 }
 
 .github-card {
@@ -119,9 +123,4 @@ h1 {
 
 .github-button:hover {
     background: #2ea043;
-}
-
-/* All h1 elements are already set to white by the rule below */
-h1 {
-    color: white;
 }
