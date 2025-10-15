@@ -1,0 +1,67 @@
+.projects-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform, box-shadow;
+    margin-bottom: 1rem;
+}
+
+mat-card-header {
+    align-items: flex-start;
+}
+
+mat-card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+mat-card-subtitle {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+mat-card-content p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.4;
+}
+
+/* ✨ Hover animation */
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* make images nicely scaled */
+mat-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}

@@ -1,0 +1,59 @@
+.home-container {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-header {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.text-center {
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* 🌐 Responsive grid for logos */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    ;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.75rem;
+}
+
+.logo-container h2 {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
