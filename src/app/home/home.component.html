@@ -1,13 +1,30 @@
 <div class="home-container">
-    <h1 class="home-header">Tech Stack</h1>
-    <p class="text-center">Explore the creative world — your projects start here!</p>
+        <app-avatar></app-avatar>
+        <app-header></app-header>
+        <section class="github-section">
+            <div class="github-card" onclick="window.open('https://github.com/dev-mshah', '_blank')">
+                <img src="1.jpeg" alt="Avatar" class="github-avatar" />
+                <div class="github-info">
+                    <p class="github-handle">&#64;dev-mshah</p>
+                    <button class="github-button">View GitHub</button>
+                </div>
+            </div>
+        </section>
 
+
+    <h1 class="home-header">Expertise</h1>
+    <p class="text-center">Tools and technologies</p>
     <section class="projects-section">
         <div class="tech-grid">
             <div class="logo-container">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Microsoft_.NET_logo.svg/1200px-Microsoft_.NET_logo.svg.png"
                     alt=".NET Logo" class="logo-img" />
                 <h2>.NET</h2>
+            </div>
+            <div class="logo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/C_Sharp_Logo_2023.svg/1200px-C_Sharp_Logo_2023.svg.png"
+                    alt="Redis Logo" class="logo-img" />
+                <h2>C#</h2>
             </div>
 
             <div class="logo-container">
@@ -23,24 +40,22 @@
             </div>
 
             <div class="logo-container">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/869px-Jenkins_logo.svg.png"
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png"
                     alt="Jenkins Logo" class="logo-img" />
-                <h2>Jenkins</h2>
+                <h2>Python</h2>
             </div>
 
             <div class="logo-container">
-                <img src="https://data.it-novum.com/wp-content/uploads/2021/02/apache_kafka_logo-1200x547.png"
+                <img src="https://www.ibm.com/adobe/dynamicmedia/deliver/dm-aid--f385b240-1636-41a3-97a6-a0a6fbc58352/azure-sql-server-monitoring.png?preferwebp=true&quality=90"
                     alt="Kafka Logo" class="logo-img" />
-                <h2>Kafka</h2>
+                <h2>SQL</h2>
             </div>
 
-            <div class="logo-container">
-                <img src="https://www.stackery.io/assets/images/posts/redis-cache-cluster-support/featured.svg"
-                    alt="Redis Logo" class="logo-img" />
-                <h2>Redis</h2>
-            </div>
+        
         </div>
 
         <app-projects></app-projects>
+
+        
     </section>
 </div>

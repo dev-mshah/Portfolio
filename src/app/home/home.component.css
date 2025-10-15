@@ -32,7 +32,7 @@
     align-items: center;
     background: #fafafa;
     border-radius: 12px;
-    padding: 1rem;
+    padding: 0.2rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -54,6 +54,74 @@
     margin: 0;
 }
 
+h1 {
+    color: white;
+}
+
+.github-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.github-card {
+    display: flex;
+    align-items: center;
+    background: #0d1117;
+    color: #c9d1d9;
+    padding: 20px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.github-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.github-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    border: 2px solid #58a6ff;
+}
+
+.github-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.github-name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.github-handle {
+    margin: 4px 0 12px;
+    color: #8b949e;
+}
+
+.github-button {
+    background: #238636;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.github-button:hover {
+    background: #2ea043;
+}
+
+/* All h1 elements are already set to white by the rule below */
 h1 {
     color: white;
 }
