@@ -40,7 +40,7 @@ export class LeetCodeTableComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<LeetCodeQuestion[]>('http://localhost:5118/api/LeetCode')
+    this.http.get<LeetCodeQuestion[]>('https://problemsettracker.onrender.com/api/leetcode')
       .subscribe(data => this.dataSource = data);
   }
 }
