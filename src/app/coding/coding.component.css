@@ -1,0 +1,33 @@
+.coding-container {
+    padding: 20px;
+    background-color: black;
+    justify-items: center;
+
+}
+
+.primmary {
+    color: white;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.home-link {
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+}
+
+.home-icon {
+    font-size: 50px;
+    /* increase or decrease as needed */
+    width: 50px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    align-self: center;
+    color: orange;
+}

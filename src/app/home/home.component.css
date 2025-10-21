@@ -65,7 +65,7 @@ h1 {
 
 .github-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -113,6 +113,16 @@ h1 {
 
 .github-button {
     background: #238636;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.leet-button {
+    background: orange;
     border: none;
     color: white;
     padding: 8px 16px;

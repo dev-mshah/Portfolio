@@ -7,13 +7,16 @@ import { AvatarComponent } from '../avatar/avatar.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HeaderComponent } from '../header/header.component';
 import { LeetCodeTableComponent } from '../leetcode-table/leetcode-table.component';
+import { RouterLink } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProjectsComponent, MatButtonModule, MatCardModule, MatGridListModule, MatExpansionModule, AvatarComponent, HeaderComponent, LeetCodeTableComponent],
+  imports: [ProjectsComponent, MatButtonModule, MatCardModule, MatGridListModule, MatExpansionModule, AvatarComponent, HeaderComponent, LeetCodeTableComponent, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
 
 }
