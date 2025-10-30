@@ -82,7 +82,7 @@ export class LeetCodeTableComponent implements OnInit {
   }
 
   loadQuestions(): void {
-    this.http.get<LeetCodeQuestion[]>('http://localhost:5000/api/leetcode')
+    this.http.get<LeetCodeQuestion[]>('http://problemsettracker.onrender.com/api/leetcode')
       .subscribe(data => {
         this.dataSource = data;
         this.filteredData = [...data];
@@ -107,7 +107,7 @@ export class LeetCodeTableComponent implements OnInit {
     if (!this.newQuestion.title || !this.newQuestion.category) return;
 
     this.http.post<LeetCodeQuestion>(
-      'http://localhost:5000/api/leetcode',
+      'http://problemsettracker.onrender.com/api/leetcode',
       this.newQuestion
     ).subscribe(created => {
       this.dataSource.push(created);
