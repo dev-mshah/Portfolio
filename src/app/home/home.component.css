@@ -35,7 +35,7 @@
     flex-direction: column;
     align-items: center;
     background: #fafafa;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 0.5rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -65,8 +65,15 @@ h1 {
 
 .github-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    /* ✅ allows wrapping */
+    gap: 20px;
+    /* ✅ adds spacing between cards */
+    padding: 20px;
+    /* ✅ prevents edge overflow */
+    box-sizing: border-box;
 }
 
 .github-card {
@@ -79,12 +86,17 @@ h1 {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    /* ✅ limits card width */
+    flex: 1 1 300px;
+    /* ✅ makes cards responsive */
 }
 
 .github-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
 
 .github-avatar {
     width: 80px;
